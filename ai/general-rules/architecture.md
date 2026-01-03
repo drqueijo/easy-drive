@@ -123,7 +123,7 @@ export * from "./validations/auth.schema";
 
 ## Criando uma Nova Feature
 
-1. Consulte [`./ai/AI-GUIDE.md`](./ai/AI-GUIDE.md) seção "Arquitetura"
+1. Consulte [`../README.md`](../README.md) seção "Workflow Completo"
 2. Crie a estrutura em `features/[feature-name]/`
 3. Siga o padrão de organização acima
 4. Implemente os componentes respeitando Server/Client separation

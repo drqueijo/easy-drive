@@ -110,8 +110,9 @@ export function toUserPublicDTO(user: DatabaseUser): UserPublicDTO {
 
 Para detalhes completos sobre DTOs e segurança de dados:
 
-- [`./ai/AI-GUIDE.md`](./ai/AI-GUIDE.md) - Guia completo de desenvolvimento
-- [`security.md`](./security.md) - Regras de segurança e dados sensíveis
+- [`../README.md`](../README.md) - Guia completo de desenvolvimento
+- [`./security.md`](./security.md) - Regras de segurança e dados sensíveis
+- [`./validation.md`](./validation.md) - Validação com Zod
 
 ## ⚠️ Lembrete
 

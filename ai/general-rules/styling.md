@@ -65,8 +65,9 @@ O RetroUI segue padrões visuais específicos:
 
 Para detalhes completos sobre estilo e design, consulte:
 
-- [`./ai/AI-GUIDE.md`](./ai/AI-GUIDE.md) - Guia completo de desenvolvimento
-- [`./components/retroui/`](./components/retroui/) - Catálogo de componentes
+- [`../README.md`](../README.md) - Guia completo de desenvolvimento
+- [`../libs/retro-ui.md`](../libs/retro-ui.md) - Documentação RetroUI
+- [`../../components/retroui/`](../../components/retroui/) - Catálogo de componentes
 
 ## ⚠️ Lembrete
 

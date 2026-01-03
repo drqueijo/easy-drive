@@ -467,9 +467,10 @@ Nunca exponha em APIs públicas:
 
 Depois de ler este documento:
 
-1. Leia [`01-architecture.md`](01-architecture.md) - Arquitetura detalhada
-2. Leia [`02-conventions.md`](02-conventions.md) - Convenções de código
-3. Escolha um template em [`templates/`](templates/) para começar a implementar
+1. Leia [`../general-rules/architecture.md`](../general-rules/architecture.md) - Arquitetura detalhada e estrutura do código
+2. Consulte [`../general-rules/`](../general-rules/) - Todas as regras e convenções de código
+3. Explore componentes em [`../../components/retroui/`](../../components/retroui/) - Catálogo de componentes disponíveis
+4. Leia [`../libs/supabase-declarative-database-schema.md`](../libs/supabase-declarative-database-schema.md) - Se precisar modificar o database
 
 ---
 

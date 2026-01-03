@@ -199,8 +199,8 @@ Antes de expor qualquer dado, verifique:
 
 Segurança não é opcional. Em caso de dúvida sobre expor um dado:
 
-1. ✅ Consulte [`./ai/AI-GUIDE.md`](./ai/AI-GUIDE.md)
-2. ✅ Use DTOs para filtrar dados sensíveis
+1. ✅ Consulte [`../README.md`](../README.md) - Guia completo
+2. ✅ Use DTOs para filtrar dados sensíveis (veja [`./dto.md`](./dto.md))
 3. ✅ Aplique mascaramento quando necessário
-4. ✅ Verifique políticas RLS
+4. ✅ Verifique políticas RLS (veja [`../libs/supabase-postgres.md`](../libs/supabase-postgres.md))
 5. ✅ **Quando em dúvida, NÃO exponha**

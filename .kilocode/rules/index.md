@@ -137,7 +137,7 @@ function process(data: User) {}
 ### Criando uma Nova Feature
 
 1. **Consulte:** [`./ai/README.md`](./ai/README.md) → "Criar Nova Feature"
-2. **Leia:** 
+2. **Leia:**
    - [`./ai/general-rules/architecture.md`](./ai/general-rules/architecture.md)
    - [`./ai/general-rules/dto.md`](./ai/general-rules/dto.md)
    - [`./ai/general-rules/validation.md`](./ai/general-rules/validation.md)
