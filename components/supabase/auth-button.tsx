@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "@/components/retroui/Button";
 import { createClient } from "@/lib/supabase/server";
+import Link from "next/link";
 import { LogoutButton } from "./logout-button";
 
 export async function AuthButton() {

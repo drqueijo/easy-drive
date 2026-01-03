@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/retroui/Badge";
 import { Button } from "@/components/retroui/Button";
 import { Card } from "@/components/retroui/Card";
@@ -5,10 +7,10 @@ import { Input } from "@/components/retroui/Input";
 import { Text } from "@/components/retroui/Text";
 import { cn } from "@/lib/utils";
 
-import { styles as s } from "./Home.styles";
-import type { HomeProps } from "./Home.types";
+import { styles as s } from "../../styles/home-page.styles";
+import type { HomePageProps } from "../../types/marketing.types";
 
-export default function Home({ className }: HomeProps) {
+export function HomePage({ className }: HomePageProps) {
   return (
     <div className={cn(s().container(), className)}>
       <header className={s().header()}>
