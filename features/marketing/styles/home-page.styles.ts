@@ -17,7 +17,7 @@ export const styles = tv({
     heroSection: "grid gap-10 md:grid-cols-2 md:items-center",
     heroLeft: "space-y-6",
     badgeRow: "flex flex-wrap items-center gap-2",
-    title: "max-w-xl",
+    title: "max-w-xl font-medium",
     subtitle: "max-w-xl text-muted-foreground",
     cta: "justify-center sm:w-auto",
 
