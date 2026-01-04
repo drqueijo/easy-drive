@@ -5,11 +5,11 @@
  * NUNCA exponha entidades do banco diretamente.
  */
 
+import type { Tables } from "@/types/supabase";
 import type { AddressPublicDTO } from "./address.dto";
-import type { InstructorEntity } from "@/types/supabase"
-
-type instructorEntity = Tables<'instructors'>;
 import type { InstructorProfilePublicDTO } from "./instructor-profile.dto";
+
+type InstructorEntity = Tables<"instructors">;
 
 /**
  * DTO Público - Dados do instrutor visíveis para todos

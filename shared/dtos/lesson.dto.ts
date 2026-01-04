@@ -2,7 +2,9 @@
  * Lesson DTOs
  */
 
-import type { Lesson } from "../types/lesson.types";
+import type { Tables } from "@/types/supabase";
+
+type Lesson = Tables<"lessons">;
 
 export interface LessonDTO {
   id: string;
