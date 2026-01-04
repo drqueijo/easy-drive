@@ -4,10 +4,10 @@
  * Never expose `UserEntity` (DB row) directly.
  */
 
-import type { Enums } from "@/types/supabase";
-import type { AddressPublicDTO } from "@/features/addresses";
-import type { UserEntity } from "../entities/user.entity";
+import type { Enums, Tables } from "@/types/supabase";
+import type { AddressPublicDTO } from "./address.dto";
 
+type UserEntity = Tables<"users">;
 type DocumentType = Enums<"document_type">;
 
 /**
@@ -66,7 +66,10 @@ export function toUserPublicDTOs(users: UserEntity[]): UserPublicDTO[] {
   return users.map(toUserPublicDTO);
 }
 
-function maskDocument(type: DocumentType | null, value: string | null): string | null {
+function maskDocument(
+  type: DocumentType | null,
+  value: string | null
+): string | null {
   if (!value) return null;
 
   // Remove non-digits for masking heuristics (keeps original value if not digit-like)
@@ -87,5 +90,3 @@ function maskDocument(type: DocumentType | null, value: string | null): string |
   if (value.length <= 2) return "XX";
   return `${"X".repeat(value.length - 2)}${value.slice(-2)}`;
 }
-
-

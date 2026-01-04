@@ -5,7 +5,9 @@
  */
 
 import type { Enums } from "@/types/supabase";
-import type { InstructorProfileEntity } from "../entities/instructor-profile.entity";
+import type { InstructorProfileEntity } from "@/types/supabase"
+
+type instructor-profileEntity = Tables<'instructor-profiles'>;
 
 type DriversLicenseType = Enums<"drivers_license_type">;
 

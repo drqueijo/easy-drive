@@ -5,8 +5,10 @@
  * NUNCA exponha entidades do banco diretamente.
  */
 
-import type { AddressPublicDTO } from "@/features/addresses";
-import type { InstructorEntity } from "../entities/instructor.entity";
+import type { AddressPublicDTO } from "./address.dto";
+import type { InstructorEntity } from "@/types/supabase"
+
+type instructorEntity = Tables<'instructors'>;
 import type { InstructorProfilePublicDTO } from "./instructor-profile.dto";
 
 /**

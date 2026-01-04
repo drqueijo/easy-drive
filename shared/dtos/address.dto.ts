@@ -4,7 +4,9 @@
  * Never expose `AddressEntity` (DB row) directly.
  */
 
-import type { AddressEntity } from "../entities/address.entity";
+import type { Tables } from "@/types/supabase";
+
+type AddressEntity = Tables<"addresses">;
 
 /**
  * DTO Público - Endereço com granularidade mínima (ex.: listagens públicas)
@@ -49,8 +51,8 @@ export function toAddressPrivateDTO(address: AddressEntity): AddressPrivateDTO {
   };
 }
 
-export function toAddressPublicDTOs(addresses: AddressEntity[]): AddressPublicDTO[] {
+export function toAddressPublicDTOs(
+  addresses: AddressEntity[]
+): AddressPublicDTO[] {
   return addresses.map(toAddressPublicDTO);
 }
-
-
