@@ -1,4 +1,4 @@
-import AuthLayout from "@/components/layouts/AuthLayout";
+import AuthLayout from "@/components/layouts/AuthLayout/AuthLayout";
 import { UpdatePasswordForm } from "../_components/UpdatePasswordForm";
 
 export default function Page() {
