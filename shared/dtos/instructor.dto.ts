@@ -81,5 +81,5 @@ export function toInstructorPrivateDTO(
 export function toInstructorPublicDTOs(
   instructors: InstructorEntity[]
 ): InstructorPublicDTO[] {
-  return instructors.map(toInstructorPublicDTO);
+  return instructors.map((instructor) => toInstructorPublicDTO(instructor));
 }
