@@ -5,7 +5,7 @@ import { Button } from "@/components/retroui/Button";
 import { Card } from "@/components/retroui/Card";
 import { Input } from "@/components/retroui/Input";
 import { Text } from "@/components/retroui/Text";
-import { cn } from "@/lib/utils";
+import { cn } from "@/shared/utils";
 
 import { styles as s } from "../../styles/home-page.styles";
 import type { HomePageProps } from "../../types/marketing.types";

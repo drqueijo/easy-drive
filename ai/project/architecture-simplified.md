@@ -172,9 +172,9 @@ app/(app)/dashboard/
 // app/(app)/profile/_actions.ts
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
-import { updateProfileSchema } from "@/lib/validations/user";
-import { toUserPublicDTO } from "@/lib/dtos/user.dto";
+import { createClient } from "@/shared/supabase/server";
+import { updateProfileSchema } from "@/shared/validations/user";
+import { toUserPublicDTO } from "@/shared/dtos/user.dto";
 
 export async function updateProfile(formData: FormData) {
   const data = Object.fromEntries(formData);
@@ -308,8 +308,8 @@ export default async function InstructorsPage() {
 // app/(app)/instructors/_actions.ts
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
-import { toInstructorPublicDTOs } from "@/lib/dtos/instructor.dto";
+import { createClient } from "@/shared/supabase/server";
+import { toInstructorPublicDTOs } from "@/shared/dtos/instructor.dto";
 
 export async function getInstructors() {
   const supabase = await createClient();
@@ -729,7 +729,7 @@ Precisa buscar dados?
 
 ```typescript
 // lib/dtos/user.dto.ts
-import type { Database } from "@/lib/types/database";
+import type { Database } from "@/shared/types/database";
 
 type UserEntity = Database["public"]["tables"]["users"]["Row"];
 
@@ -935,9 +935,9 @@ export default async function ProfilePage() {
 // app/(app)/profile/_actions.ts
 ("use server");
 
-import { createClient } from "@/lib/supabase/server";
-import { toUserPrivateDTO, toUserPublicDTO } from "@/lib/dtos/user.dto";
-import { updateProfileSchema } from "@/lib/validations/user";
+import { createClient } from "@/shared/supabase/server";
+import { toUserPrivateDTO, toUserPublicDTO } from "@/shared/dtos/user.dto";
+import { updateProfileSchema } from "@/shared/validations/user";
 import { revalidatePath } from "next/cache";
 
 export async function getCurrentUser() {

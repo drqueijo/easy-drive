@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@/components/retroui/Button';
-import { createClient } from '@/lib/supabase/client';
+import { createClient } from '@/shared/supabase/client';
 import { useRouter } from 'next/navigation';
 
 export function LogoutButton() {

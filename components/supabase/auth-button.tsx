@@ -1,5 +1,5 @@
 import { Button } from "@/components/retroui/Button";
-import { createClient } from "@/lib/supabase/server";
+import { createClient } from "@/shared/supabase/server";
 import Link from "next/link";
 import { LogoutButton } from "./logout-button";
 

@@ -12,7 +12,7 @@ import type { InstructorPublicDTO } from "@/features/instructors/dtos/instructor
 import { toInstructorPublicDTO } from "@/features/instructors/dtos/instructor.dto";
 import type { InstructorProfileEntity } from "@/features/instructors/entities/instructor-profile.entity";
 import type { InstructorEntity } from "@/features/instructors/entities/instructor.entity";
-import { createClient } from "@/lib/supabase/server";
+import { createClient } from "@/shared/supabase/server";
 import type { UserPrivateDTO } from "../dtos/user.dto";
 import { toUserPrivateDTO } from "../dtos/user.dto";
 import type { UserEntity } from "../entities/user.entity";

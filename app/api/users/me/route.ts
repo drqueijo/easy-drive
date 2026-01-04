@@ -10,7 +10,7 @@ import {
   updateCurrentUser,
 } from "@/features/users/services/user.service";
 import { updateUserSchema } from "@/features/users/validations/user.schema";
-import { createClient } from "@/lib/supabase/server";
+import { createClient } from "@/shared/supabase/server";
 import { NextRequest, NextResponse } from "next/server";
 
 /**
