@@ -4,11 +4,9 @@
  * Never expose `InstructorProfileEntity` (DB row) directly.
  */
 
-import type { Enums } from "@/types/supabase";
-import type { InstructorProfileEntity } from "@/types/supabase"
+import type { Enums, Tables } from "@/types/supabase";
 
-type instructor-profileEntity = Tables<'instructor-profiles'>;
-
+type InstructorProfileEntity = Tables<"instructor_profiles">;
 type DriversLicenseType = Enums<"drivers_license_type">;
 
 export interface InstructorProfilePublicDTO {
@@ -22,7 +20,8 @@ export interface InstructorProfilePublicDTO {
   currentDriversLicenseType: DriversLicenseType | null;
 }
 
-export interface InstructorProfilePrivateDTO extends InstructorProfilePublicDTO {
+export interface InstructorProfilePrivateDTO
+  extends InstructorProfilePublicDTO {
   complement: string | null;
 }
 
@@ -55,5 +54,3 @@ export function toInstructorProfilePublicDTOs(
 ): InstructorProfilePublicDTO[] {
   return profiles.map(toInstructorProfilePublicDTO);
 }
-
-
